@@ -7,9 +7,10 @@
 //
 
 #import "AXCropViewController.h"
-#import "AXMyScretTopView.h"
 #import "AXCropView.h"
-#import "ALAssetsLibrary+addALAsset.h"
+
+#define ScreenHight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
 
 @interface AXCropViewController ()
 
@@ -27,24 +28,25 @@
 
 -(void)setupUI
 {
-    [self setupTopView];
     [self setContentView];
+    UIBarButtonItem *righBar = [[UIBarButtonItem alloc] initWithTitle:@"确定" style:UIBarButtonItemStylePlain target:self action:@selector(cropImg)];
+    self.navigationItem.rightBarButtonItem = righBar;
 }
 
--(void)setupTopView
-{
-    AXMyScretTopView * topView = [AXMyScretTopView myScretTopView];
-    topView.frame = CGRectMake(0, 0, ScreenWidth, 44);
-    topView.backgroundColor = JGCOLOR(233, 108, 143);
-    topView.titleLabel.text = @"截图";
-    topView.sureBtn.hidden = NO;
-    [self.view addSubview:topView];
-    __weak typeof(self) sf = self;
-    topView.block = ^(NSInteger index)
-    {
-        [sf topViewActionWithIndex:index];
-    };
-}
+//-(void)setupTopView
+//{
+//    AXMyScretTopView * topView = [AXMyScretTopView myScretTopView];
+//    topView.frame = CGRectMake(0, 0, ScreenWidth, 44);
+//    topView.backgroundColor = JGCOLOR(233, 108, 143);
+//    topView.titleLabel.text = @"截图";
+//    topView.sureBtn.hidden = NO;
+//    [self.view addSubview:topView];
+//    __weak typeof(self) sf = self;
+//    topView.block = ^(NSInteger index)
+//    {
+//        [sf topViewActionWithIndex:index];
+//    };
+//}
 
 -(void)setContentView
 {
@@ -102,14 +104,20 @@
     UIImage *newImg = UIGraphicsGetImageFromCurrentImageContext();
     CGImageRelease(imgRef);
     UIGraphicsEndImageContext();
+
+    if (self.block) {
+        self.block(newImg);
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+
     
-    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-    [library toolWriteImageToSavedPhotosAlbum:newImg.CGImage metadata:nil completionBlock:^(NSURL *assetURL, NSError *error) {
-        if(error)
-        {
-            JGLog(@"截图写入出错");
-        }
-    } groupName:@"爱秀"];
+//    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+//    [library toolWriteImageToSavedPhotosAlbum:newImg.CGImage metadata:nil completionBlock:^(NSURL *assetURL, NSError *error) {
+//        if(error)
+//        {
+//            JGLog(@"截图写入出错");
+//        }
+//    } groupName:@"爱秀"];
 }
 
 @end

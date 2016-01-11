@@ -15,6 +15,14 @@
 		08DC9A331C433BA200238729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DC9A311C433BA200238729 /* LaunchScreen.storyboard */; };
 		08DC9A3E1C433BA200238729 /* CropDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DC9A3D1C433BA200238729 /* CropDemoTests.m */; };
 		08DC9A491C433BA300238729 /* CropDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DC9A481C433BA300238729 /* CropDemoUITests.m */; };
+		08DC9A581C433BC500238729 /* AXCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DC9A571C433BC500238729 /* AXCropViewController.m */; };
+		08DC9A5B1C433BE900238729 /* AXCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DC9A5A1C433BE900238729 /* AXCropView.m */; };
+		08DC9A5E1C433C3300238729 /* UIView+addView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DC9A5D1C433C3300238729 /* UIView+addView.m */; };
+		08DC9A601C433CF400238729 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DC9A5F1C433CF400238729 /* 1.png */; };
+		08DC9A621C433E3900238729 /* ScanTranslation3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DC9A611C433E3900238729 /* ScanTranslation3@2x.png */; };
+		08DC9A641C433E4100238729 /* ScanTranslation2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DC9A631C433E4100238729 /* ScanTranslation2@2x.png */; };
+		08DC9A661C433E4800238729 /* ScanTranslation1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DC9A651C433E4800238729 /* ScanTranslation1@2x.png */; };
+		08DC9A681C433E6B00238729 /* ScanTranslation4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DC9A671C433E6B00238729 /* ScanTranslation4@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,17 @@
 		08DC9A441C433BA200238729 /* CropDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CropDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DC9A481C433BA300238729 /* CropDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CropDemoUITests.m; sourceTree = "<group>"; };
 		08DC9A4A1C433BA300238729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08DC9A561C433BC500238729 /* AXCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXCropViewController.h; sourceTree = "<group>"; };
+		08DC9A571C433BC500238729 /* AXCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXCropViewController.m; sourceTree = "<group>"; };
+		08DC9A591C433BE900238729 /* AXCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXCropView.h; sourceTree = "<group>"; };
+		08DC9A5A1C433BE900238729 /* AXCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXCropView.m; sourceTree = "<group>"; };
+		08DC9A5C1C433C3300238729 /* UIView+addView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+addView.h"; sourceTree = "<group>"; };
+		08DC9A5D1C433C3300238729 /* UIView+addView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+addView.m"; sourceTree = "<group>"; };
+		08DC9A5F1C433CF400238729 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		08DC9A611C433E3900238729 /* ScanTranslation3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanTranslation3@2x.png"; sourceTree = "<group>"; };
+		08DC9A631C433E4100238729 /* ScanTranslation2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanTranslation2@2x.png"; sourceTree = "<group>"; };
+		08DC9A651C433E4800238729 /* ScanTranslation1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanTranslation1@2x.png"; sourceTree = "<group>"; };
+		08DC9A671C433E6B00238729 /* ScanTranslation4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanTranslation4@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +120,17 @@
 		08DC9A221C433BA200238729 /* CropDemo */ = {
 			isa = PBXGroup;
 			children = (
+				08DC9A651C433E4800238729 /* ScanTranslation1@2x.png */,
+				08DC9A671C433E6B00238729 /* ScanTranslation4@2x.png */,
+				08DC9A631C433E4100238729 /* ScanTranslation2@2x.png */,
+				08DC9A611C433E3900238729 /* ScanTranslation3@2x.png */,
+				08DC9A5F1C433CF400238729 /* 1.png */,
+				08DC9A5C1C433C3300238729 /* UIView+addView.h */,
+				08DC9A5D1C433C3300238729 /* UIView+addView.m */,
+				08DC9A591C433BE900238729 /* AXCropView.h */,
+				08DC9A5A1C433BE900238729 /* AXCropView.m */,
+				08DC9A561C433BC500238729 /* AXCropViewController.h */,
+				08DC9A571C433BC500238729 /* AXCropViewController.m */,
 				08DC9A261C433BA200238729 /* AppDelegate.h */,
 				08DC9A271C433BA200238729 /* AppDelegate.m */,
 				08DC9A291C433BA200238729 /* ViewController.h */,
@@ -243,9 +273,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08DC9A641C433E4100238729 /* ScanTranslation2@2x.png in Resources */,
 				08DC9A331C433BA200238729 /* LaunchScreen.storyboard in Resources */,
+				08DC9A601C433CF400238729 /* 1.png in Resources */,
 				08DC9A301C433BA200238729 /* Assets.xcassets in Resources */,
+				08DC9A681C433E6B00238729 /* ScanTranslation4@2x.png in Resources */,
 				08DC9A2E1C433BA200238729 /* Main.storyboard in Resources */,
+				08DC9A661C433E4800238729 /* ScanTranslation1@2x.png in Resources */,
+				08DC9A621C433E3900238729 /* ScanTranslation3@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +306,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				08DC9A2B1C433BA200238729 /* ViewController.m in Sources */,
+				08DC9A581C433BC500238729 /* AXCropViewController.m in Sources */,
 				08DC9A281C433BA200238729 /* AppDelegate.m in Sources */,
+				08DC9A5E1C433C3300238729 /* UIView+addView.m in Sources */,
 				08DC9A251C433BA200238729 /* main.m in Sources */,
+				08DC9A5B1C433BE900238729 /* AXCropView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

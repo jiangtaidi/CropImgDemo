@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AXBaseViewController.h"
+//#import "AXBaseViewController.h"
 
-@interface AXCropViewController : AXBaseViewController
+typedef void(^AXCropViewControllerBlock)(UIImage *img);
+
+@interface AXCropViewController : UIViewController
 
 @property(nonatomic,strong)UIImage *img;
+@property(nonatomic,copy)AXCropViewControllerBlock block;
 
 @end

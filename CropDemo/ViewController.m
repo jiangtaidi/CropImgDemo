@@ -7,21 +7,35 @@
 //
 
 #import "ViewController.h"
+#import "AXCropViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)buttonClicked:(id)sender {
+    AXCropViewController *cropVc = [[AXCropViewController alloc] init];
+    cropVc.img = [UIImage imageNamed:@"1"];
+    cropVc.block = ^(UIImage *img)
+    {
+        self.imgView.image = img;
+    };
+    [self.navigationController pushViewController:cropVc animated:YES];
 }
 
 @end
+
+
+
+
+
+
+
+
